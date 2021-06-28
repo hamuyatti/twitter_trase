@@ -41,7 +41,7 @@ class MyApp extends StatelessWidget {
               itemBuilder: (context, index) {
                 return ListTile(
                   leading :Padding(
-                    padding: const EdgeInsets.only(top: 5, right: 0, bottom: 5, left: 0),
+                    padding: const EdgeInsets.only(top: 0, right: 0, bottom: 0, left: 0),
                     child: SizedBox(
                       height: 50,
                       width: 50,
@@ -56,7 +56,11 @@ class MyApp extends StatelessWidget {
                         children: [
                           Padding(
                             padding: const  EdgeInsets.only(top: 0, right: 0, bottom: 5, left: 0),
-                            child: Text("hamu"),
+                            child: Text(
+                                "hamu",
+                            style: TextStyle(
+                              fontWeight: FontWeight.bold
+                            ),),
                           ),
                           Padding(
                             padding: const EdgeInsets.only(top: 0, right: 0, bottom: 5, left: 150),
@@ -69,9 +73,9 @@ class MyApp extends StatelessWidget {
                         ],
                       ),
                       Row(
-                          mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                          mainAxisAlignment: MainAxisAlignment.start,
                         children:[
-                          Text("今日はいい天気。")
+                          Text("今日はいい天気。散歩しようかな。\n でもお腹すいたなぁ"),
                         ]
                       )
 
