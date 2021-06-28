@@ -75,7 +75,7 @@ class MyApp extends StatelessWidget {
                       Row(
                           mainAxisAlignment: MainAxisAlignment.start,
                         children:[
-                          Text("今日はいい天気。散歩しようかな。\n でもお腹すいたなぁ"),
+                          Text("今日はいい天気。散歩しようかな。\n お腹すいたなぁ"),
                         ]
                       )
 
